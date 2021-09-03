@@ -1,0 +1,18 @@
+#WORLD {
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 500px;
+
+    background: grey;
+}
+
+.animal {
+    position: absolute;
+    
+    transition: all 1s linear;
+    -webkit-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -o-transition: all 1s linear;
+}
