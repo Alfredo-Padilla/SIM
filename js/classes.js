@@ -108,9 +108,9 @@ let Animal = function(id, w, h) {
             min = 0;
             max = 0;
             if ( this.pos.y < WORLD_H-this.speed_mod ) 
-            max = 1;
+                max = 1;
             if ( this.pos.y > this.speed_mod ) 
-            min = -1;
+                min = -1;
 
             // Randomize vertical movement
             y_change = this.random_direction( min, max );
