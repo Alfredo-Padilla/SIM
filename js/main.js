@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     }
     
-    let PAUSED = false;
     setInterval( () => {
         if ( !PAUSED ) 
             main();

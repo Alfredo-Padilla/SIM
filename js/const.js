@@ -5,3 +5,4 @@ const WORLD_H = 500;
 
 // LOOP
 const MS_INTERVAL = 1000;
+let PAUSED = false;

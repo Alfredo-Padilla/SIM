@@ -16,3 +16,20 @@
     -ms-transition: all 1s linear;
     -o-transition: all 1s linear;
 }
+
+.perception-r {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+
+
+
+#CONTROLS {
+    display: flex;
+    margin: 10px 0;
+}

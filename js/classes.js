@@ -21,9 +21,28 @@ let Object = function(id, w, h) {
     }
 }
 
+let Perception = function(pernt_body) {
+    return {
+        perc : {
+            pernt_body : pernt_body,
+            radius : 50,
+            
+            on_perception_radius : function () {
+                
+            },
+            
+            draw_perception_radius : function () {
+                // Como targeteo el cuerpo del padre aqui?...
+                this.pernt_body.innerHTML += '<div class="perception-r"></div>';
+            }
+        }
+    }
+}
+
 let Animal = function(id, w, h) {
     return {
-        inherit : [Object( id, w, h )],
+        body : document.createElement('div'),
+        inherit : [Object( id, w, h ), Perception( this.body )],
         color : 'green',
         speed_mod : 20,
         
@@ -34,7 +53,6 @@ let Animal = function(id, w, h) {
             // ...
         },
         
-        body : document.createElement('div'),
 
         init : function() {
             console.log( '' );
@@ -67,6 +85,8 @@ let Animal = function(id, w, h) {
         update : function() {
             console.log( '' );
             console.log( this.id+': update()' );
+
+            this.perc.draw_perception_radius();
 
             this.random_move();
             this.update_position();
